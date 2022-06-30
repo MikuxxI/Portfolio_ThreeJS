@@ -1,0 +1,81 @@
+.container-part{
+    display: flex;
+    width:100%;
+    height:100%;
+    font-size:0; /* add */
+
+    .part-side{
+        font-size:20px; /* or whatever you want */
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        filter: grayscale(100%);
+        &:hover{
+            background-size: cover;
+            filter: none;
+        }
+        z-index: 1;
+
+    }
+    #left{
+        background-image: url("../../../../public/picture.webp");
+    }
+    #right{
+        background-image: url("../../../../public/picture.webp");
+    }
+
+
+
+    .part-center{
+        position: absolute;
+        top:35%;
+        @media screen and (min-width: 300px) {
+            left: 33.2%;
+        }
+        @media screen and (min-width: 500px) {
+            left: 32%;
+        }
+        @media screen and (min-width: 700px) {
+            left: 42%;
+        }
+        @media screen and (min-width: 900px) {
+            left: 43.2%;
+        }
+        @media screen and (min-width: 1100px) {
+            left: 44.2%;
+        }
+        @media screen and (min-width: 1300px) {
+            left: 45.2%;
+        }
+        @media screen and (min-width: 1500px) {
+            left: 46.2%;
+        }
+        @media screen and (min-width: 1700px) {
+            left: 47.2%;
+        }
+		transition: 0.1s ease-in-out;
+        height: 175px;
+        width: 175px;
+        z-index: 2;
+
+    }
+    
+    #carre {
+        background-image: url("../../../../public/Logo.symbole.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        -ms-transform: rotate(45deg); /* Internet Explorer */
+        -moz-transform: rotate(45deg); /* Firefox */
+        -webkit-transform: rotate(45deg); /* Safari et Chrome */
+        -o-transform: rotate(45deg); /* Opera */
+    }
+
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+  
+
+
